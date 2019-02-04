@@ -71,7 +71,7 @@ header {
   border-bottom: 3px solid #ccc;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-left: 25%;
-  padding-right: 25%;
+  /* padding-right: 25%; */
   position: sticky;
   top: 0;
   z-index: 20;
@@ -79,6 +79,7 @@ header {
 
 h1 {
   padding: 35px 20px;
+  height: auto;
   background: #4aaaa5;
   color: #fff;
   font-size: 30px;
@@ -97,7 +98,7 @@ Navigation
 }
 .nav li {
   display: inline-block;
-  margin: 10px;
+  margin: 10px 0px;
   text-align: right;
 }
 .nav li a {
@@ -111,7 +112,7 @@ Main Content
  */
 .aboutbox{
   clear: both;
-  width: 920px;
+  width: 50%;
   position: relative;
   left:25%;
   margin-top: 40px;
@@ -241,4 +242,79 @@ footer {
 footer p {
   padding-top: 18px;
   font-size: 16px;
+}
+
+/* 
+==============================
+Media Queries 980 768 640
+==============================
+*/
+@media only screen and (min-width: 980px) {
+  html body {
+    /* background: url("../images/concrete_seamless.png"); */
+    /* background-repeat: repeat; */
+    /* background-size: auto; */
+    background-color: #7c9dda;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    padding: 35px 10px;
+    background: #4aaaa5;
+    color: #fff;
+    font-size: 30px;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    padding-left: 0%;
+    position: static;
+  }
+  h1 {
+    padding: 15px 5px;
+    width:100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .nav {
+    width: 100%;
+    /* float: right; */
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .nav li {
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .aboutbox{
+    clear: both;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    padding: 5px;
+    /* background: #fff;
+    border: 4px solid #ddd; */
+  }
+  h2{
+    padding: 5px;
+    font-size: 40px;
+  }
+  .image {
+    width: 97%;
+    height: 97%;
+  }
+  p {
+    clear: both;
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  footer {
+    position: static;
+  }
 }
