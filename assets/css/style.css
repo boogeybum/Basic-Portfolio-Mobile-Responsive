@@ -71,7 +71,7 @@ header {
   border-bottom: 3px solid #ccc;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-left: 25%;
-  /* padding-right: 25%; */
+  padding-right: 5%;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -246,31 +246,62 @@ footer p {
 
 /* 
 ==============================
-Media Queries 980 768 640
+Media Queries 980
 ==============================
 */
 @media only screen and (min-width: 980px) {
-  html body {
-    /* background: url("../images/concrete_seamless.png"); */
-    /* background-repeat: repeat; */
-    /* background-size: auto; */
-    background-color: #7c9dda;
-  }
+  
 }
 
+/* 
+==============================
+Media Queries 768
+==============================
+*/
 @media only screen and (max-width: 768px) {
+  header {
+    padding-left: 5%;
+  }
   h1 {
     padding: 35px 10px;
-    background: #4aaaa5;
-    color: #fff;
     font-size: 30px;
     float: left;
   }
+  /*
+  =======================
+  About Me 768
+  =======================
+  */
+  .aboutbox{
+    clear: both;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  /*
+  =======================
+  Portfolio 768
+  =======================
+  */
+
+  /*
+  =======================
+  Contact 768
+  =======================
+  */
 }
 
+/* 
+==============================
+Media Queries 640
+==============================
+*/
 @media only screen and (max-width: 640px) {
   header {
     padding-left: 0%;
+    padding-right: 0%;
     position: static;
   }
   h1 {
@@ -290,6 +321,11 @@ Media Queries 980 768 640
     margin: 10px 0px;
     text-align: center;
   }
+  /*
+  =======================
+  About Me 640
+  =======================
+  */
   .aboutbox{
     clear: both;
     width: 90%;
@@ -297,8 +333,6 @@ Media Queries 980 768 640
     left: 5%;
     margin-top: 20px;
     padding: 5px;
-    /* background: #fff;
-    border: 4px solid #ddd; */
   }
   h2{
     padding: 5px;
@@ -314,6 +348,53 @@ Media Queries 980 768 640
     line-height: 1.5em;
   }
 
+  /*
+  =======================
+  Portfolio 640
+  =======================
+  */
+  .portfoliobox {
+    clear: both;
+    width: 90%;
+    height: 1350px;
+    position: relative;
+    left:5%;
+    margin-top: 20px;
+    padding: 5px;
+    /* background: #fff;
+    border: 4px solid #ddd; */
+  }
+  .picturebox {
+    position: relative;
+    width: 97%;
+    /* height: 97%; */
+    margin: 20px 12px 20px 12px;
+    float: left;
+  }
+  .foliofont {
+    inline-size: 100%;
+    font-size: 20px;
+    color: #fff;
+    background: #4aaaa5;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  /*
+  =======================
+  Contact 640
+  =======================
+  */
+
+  /*
+  =======================
+  Footer 640
+  =======================
+  */
   footer {
     position: static;
   }
